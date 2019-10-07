@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 1, 2019, 6:55:11 PM
+    Author     : cleme
+*/
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;  
+    padding-bottom: 70px;
+}
+
+.aftnav {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.ONtimelogo {
+    height: 50px;
+    width: 70px;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+}
+
+.imgMaintenance {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.FAQ {
+    margin-left: 50px;
+}
+
+#accordion .panel-heading {
+    padding: 0;
+}
+
+#accordion .panel-title > a {
+    display: block;
+    padding: 0.4em 0.6em;
+    outline: none;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before  {
+    content:"\e113";
+    float: left;
+    font-family: 'Glyphicons Halflings';
+    margin-right :1em;
+}
+
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before  {
+    content:"\e114";
+}
+
+.map-container{
+    overflow:hidden;
+    position:relative;
+    height:0;
+    padding-bottom: 200px;
+}
+
+.map-container iframe{
+    height:100%;
+    width:auto;
+    position:absolute;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    bottom: 0px;
+}
+
+.btmnav {
+    color: white;
+}
+
+.btmnav:hover {
+    color: grey;
+}

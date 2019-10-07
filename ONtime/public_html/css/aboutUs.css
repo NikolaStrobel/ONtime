@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.10.2019, 02:29:07
+    Author     : Nico
+*/
+
+section.jumbotron > img{
+    width: 100%;
+}
+
+
+div.thumbnail{
+    position: relative;
+    
+}
+
+figure.popup{
+    visibility: visible;
+    display: block;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding-top: 5px;
+}
+
+figure.popup>p{
+    text-align: center;
+}
+figure.popup~img.img-circle.img-responsive{
+    display: block;
+}
+
+div.thumbnail:focus figure.popup{
+    visibility: visible;
+    position: absolute;
+    
+}
+
+h1{
+    border-bottom-style: solid;
+}
+
+h2{
+    text-align: center;
+}
+
+#storelocation > img{
+    width: 50%;
+    margin: 5px;
+}
