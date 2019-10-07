@@ -7,12 +7,6 @@ and open the template in the editor.
     Created on : 25 Sep 2019, 3:13:46 AM
     Author     : Aaron Chua
 */
-body
-{ 
-  background-image: url("img_tree.gif"), url("paper.gif");
-  background-color: #cccccc;
-}
-
 img
 {
     max-width: 100%;
@@ -106,7 +100,7 @@ img
 .overlay-right .fa
 {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #ccc;
     color: #000;
     height:35px;
     width: 35px;
@@ -126,7 +120,6 @@ img
 .card:hover .overlay-right
 {
     opacity:1;
-    msrgin-left: 5%;
     transition: 0.5s;
 }
 
@@ -350,7 +343,11 @@ img
     margin-bottom: 50px;
 }
 
-
+.carousel-control-next,
+.carousel-control-prev 
+{
+    filter: invert(100%);
+}
 
 
 
