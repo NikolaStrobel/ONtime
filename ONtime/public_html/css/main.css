@@ -115,16 +115,21 @@ footer {
      background:none !important;
 }
 
-img {
-    -webkit-filter: brightness(100%);
+.img-zoom {
+  overflow: hidden;
 }
 
-img:hover {
-    -webkit-filter: brightness(100%);
-    background-color:  rgba(0,0,0,0.5);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+.imghover img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.imghover:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.jumbotron{
+  text-align: center;
+  
 }
