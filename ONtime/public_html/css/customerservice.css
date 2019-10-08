@@ -3,6 +3,8 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
+
+
 /* 
     Created on : Oct 1, 2019, 6:55:11 PM
     Author     : cleme
@@ -10,7 +12,7 @@ and open the template in the editor.
 
 body {
     max-width: 100%;
-    overflow-x: hidden;  
+    overflow-x: hidden;
     padding-bottom: 70px;
 }
 
@@ -37,6 +39,76 @@ body {
 #CustomerInquiries {
     text-align: justify;
     text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 0px
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: large;
+}
+
+input[type=submit] {
+    background-color: rgb(43, 40, 224);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(37, 35, 170);
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 .FAQ {
@@ -47,36 +119,38 @@ body {
     padding: 0;
 }
 
-#accordion .panel-title > a {
+#accordion .panel-title>a {
     display: block;
     padding: 0.4em 0.6em;
     outline: none;
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: none;
 }
 
-#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before  {
-    content:"\e113";
+#accordion .panel-title>a.accordion-toggle::before,
+#accordion a[data-toggle="collapse"]::before {
+    content: "\e113";
     float: left;
     font-family: 'Glyphicons Halflings';
-    margin-right :1em;
+    margin-right: 1em;
 }
 
-#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before  {
-    content:"\e114";
+#accordion .panel-title>a.accordion-toggle.collapsed::before,
+#accordion a.collapsed[data-toggle="collapse"]::before {
+    content: "\e114";
 }
 
-.map-container{
-    overflow:hidden;
-    position:relative;
-    height:0;
+.map-container {
+    overflow: hidden;
+    position: relative;
+    height: 0;
     padding-bottom: 200px;
 }
 
-.map-container iframe{
-    height:100%;
-    width:auto;
-    position:absolute;
+.map-container iframe {
+    height: 100%;
+    width: auto;
+    position: absolute;
 }
 
 footer {
