@@ -64,3 +64,15 @@ h2{
     width: 150px;
 }
 
+.map-container {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 200px;
+}
+
+.map-container iframe {
+    height: 100%;
+    width: auto;
+    position: absolute;
+}
