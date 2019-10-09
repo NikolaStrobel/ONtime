@@ -10,7 +10,7 @@ and open the template in the editor.
     <title>Watch us ONtime</title>
     <meta name="description" content="How to fix your watch? No worries! Deliver your watches to ONtime store & we will fix your watches right away.
     Any questions that you want to ask us? We have a FAQ section! Or, you can contact us at +65 1234 5678">
-    <meta name="keywords" content="Watches, Buying, Selling, Discount, Offer, Fix">
+    <meta name="keywords" content="Watches, Buying, Selling, Discount, Offer, Fix, Maintenance">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/customerservice.css" rel="stylesheet" type="text/css" />
@@ -22,7 +22,7 @@ and open the template in the editor.
 </head>
 
 <body>
-    <section class="aftnav">
+    <section>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <section class="container-fluid">
                 <section class="navbar-header">
@@ -44,115 +44,159 @@ and open the template in the editor.
                         <li><a href="aboutus.html">About Us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                            </a>
+                        </li>
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </section>
             </section>
         </nav>
-        <article>
-            <section class="container">
-                <section class="row">
-                    <section class="col-sm-5">
-                        <img class="imgMaintenance" src="images/Maintenance.png" alt="Maintenance">
-                    </section>
-                    <section class="col-sm-7" id="Maintenance">
-                        <h1>Maintenance</h1>
-                        <h2>In case your watch needs some fixing...</h2>
-                        <section>
-                            <p>Regular maintenance is essential to ensure that your watch functions correctly.
-                                The lubrication in the movement parts will deteriorates and eventually dries up after
-                                certain time.
-                                When it happens, friction will generate and thus affect the precision in telling time.
-                                If your watch is noticeably fast or slow, the movement / mechanism may need to be
-                                serviced.
-                                Aging of gasket in particular will also adversely affect the water-resistance of a
-                                watch.</p>
-                            <p>We recommend a maintenance service to check your watch movement (for mechanical watches),
-                                battery (for quartz watches) and replace new gaskets every 1.5 to 2 years.</p>
-                            <p>To optimize the reliability and well-functioning of your valuable timepiece,
-                                a complete overhaul service is recommended every 3 to 5 years.</p>
-                            <p>For quotation, bring along your watch to your nearest ONtime store for assessment or call
-                                to enquire about this service.</p>
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </article>
-        <section id="CustomerInquiries">
-            <h1>Customer Inquiries</h1>
-            <form action="" method="post">
-                Name: <input type="text" name="fname" required><br>
-                Email: <input type="email" name="femail" required><br>
-                Phone Number: (+65)<input type="number" name="fnumber" minlength="8" maxlength="8" required><br>
-                Question: <input type="text" name="fquestion" required><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-        <article>
-            <section>
-                <h1 class="FAQ" id="FAQ">FAQ</h1>
-                <hr>
-                <section class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <section class="panel panel-default">
-                        <section class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Do you provide watch repair and servicing?
-                                </a>
-                            </h4>
-                        </section>
-                        <section id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-                            aria-labelledby="headingOne">
-                            <section class="panel-body">
-                                Yes! You can contact us at
-                                <a href="tel:+651234-5678">+65 1234 5678</a>
-                                or come to our store @ <address>Ang Mo Kio Avenue 8, Singapore 567739</address>
-                                <!--<section id="map-container-google-1" class="map-container">
+        <main class="aftnav">
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img class="imgMaintenance" src="images/Maintenance.png" alt="Maintenance">
+                        </div>
+                        <div class="col-sm-7" id="Maintenance">
+                            <h1>Maintenance</h1>
+                            <h2>In case your watch needs some fixing...</h2>
+                            <section>
+                                <p>Regular maintenance is essential to ensure that your watch functions correctly. The
+                                    lubrication in the movement parts will deteriorates and eventually dries up after
+                                    certain time. When it happens, friction will generate and
+                                    thus affect the precision in telling time. If your watch is noticeably fast or slow,
+                                    the movement / mechanism may need to be serviced. Aging of gasket in particular will
+                                    also adversely affect the water-resistance of a watch.
+                                </p>
+                                <p>We recommend a maintenance service to check your watch movement (for mechanical
+                                    watches), battery (for quartz watches) and replace new gaskets every 1.5 to 2 years.
+                                </p>
+                                <p>To optimize the reliability and well-functioning of your valuable timepiece, a
+                                    complete overhaul service is recommended every 3 to 5 years.</p>
+                                <p>For quotation, bring along your watch to your nearest ONtime store for assessment or
+                                    call to enquire about this service.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="container" id="CustomerInquiries">
+                <!--Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form -->
+                <form action="">
+                    <h1>Customer Inquiries</h1>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="CIname" name="CIname" placeholder="Your name.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="CIemail">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="CIemail" name="CIemail" placeholder="E.g: abc@def.com" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="CInumber">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="CInumber" name="CInumber" placeholder="(+65) E.g: 98765432"
+                                pattern="[0-9]{8}" maxlength="8" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="question">Question</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="CIquestion" name="CIquestion" placeholder="Write your question.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <!--Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form -->
+            </div>
+            <article>
+                <section>
+                    <h1 class="FAQ" id="FAQ">FAQ</h1>
+                    <hr>
+                    <!-- FAQ collapsible - https://bootsnipp.com/snippets/qADDB -->
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Do you provide watch repair and servicing?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Yes! You can contact us at
+                                    <a href="tel:+651234-5678">+65 1234 5678</a> or come to our store @ <address>Ang Mo
+                                        Kio
+                                        Avenue 8, Singapore 567739</address>
+                                    <!--<section id="map-container-google-1" class="map-container">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.665252371279!2d103.84664861475406!3d1.3775233989953317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1570349899057!5m2!1sen!2ssg"
                                         frameborder="1" style="border:1;">
                                     </iframe>
                                 </section>-->
-                            </section>
-                        </section>
-                    </section>
-                    <section class="panel panel-default">
-                        <section class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
-                                    How long does it takes to repair a watch?
-                                </a>
-                            </h4>
-                        </section>
-                        <section id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                            aria-labelledby="headingTwo">
-                            <section class="panel-body">
-                                2 – 3 months, depending on the brand and complexity of the repair. We will contact you
-                                for the collection of your watch once it
-                            </section>
-                        </section>
-                    </section>
-                    <section class="panel panel-default">
-                        <section class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    I bought a watch oversea, can I send to you for repair?
-                                </a>
-                            </h4>
-                        </section>
-                        <section id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                            aria-labelledby="headingThree">
-                            <section class="panel-body">
-                                Yes. We service all kinds of watches!
-                            </section>
-                        </section>
-                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                                        How long does it takes to repair a watch?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    2 – 3 months, depending on the brand and complexity of the repair. We will contact
+                                    you for the collection of your watch once it
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        I bought a watch oversea, can I send to you for repair?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Yes. We service all kinds of watches!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ collapsible - https://bootsnipp.com/snippets/qADDB -->
                 </section>
-            </section>
-        </article>
+            </article>
+        </main>
         <section>
             <footer class="navbar-fixed-bottom">
                 <nav>
