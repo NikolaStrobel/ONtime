@@ -4,142 +4,63 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 18.09.2019, 03:15:23
+    Created on : 07.10.2019, 02:29:07
     Author     : Nico
 */
-/*General text formatting*/
-body{
-    font-family: Georgia, Cambria, "Times New Roman", serif;
-    font-size: 100%;
-    background-color: darkslategrey;
-}
 
-/* Header and navigation */
-header, footer
-{
-color: white;
-background-color: slategray;
-margin: 15px 50px;
-padding: 10px 10px;
-font-family: Arial;
-}
-
-a:visited{
-    color:darkblue;
-    text-decoration: none;
-}
-
-a:hover{
-    font-style: italic;
-    background: yellowgreen;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-article{
-    color: black;
-    background-color: white;
-    margin: 15px 50px;
-    padding: 10px;
-}
-
-.comment{
-    font-style: italic;
-    color: grey;
-}
-
-.comment-end{
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    padding-bottom: 10px;
-}
-
-h1, h2{
-    text-align: center;
-}
-
-h3{
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-color: grey;
-}
-
-.big-image{
-    border-style: solid;
-    border-color: black;
+section.jumbotron > img{
     width: 100%;
-    padding: 0 0;
 }
 
-.footerbar{
-    list-style: none;
-    background-color: slategrey;
-    padding: 0px;
-}
 
-.footerbar li{
-    display: inline-block;
-    padding-left: 0px;
-    
-}
-
-.footerbar ul{
-    
-    padding: 0;
-}
-
-footer.container-fluid{
-    font-size: 20px;
-    text-align: center;
-}
-
-figure.nonpopup{
-    display: inline-block;
-    margin: 0;
+div.thumbnail{
     position: relative;
-}
-
-figure.popup > img{
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 0 25px blueviolet;
-    border-radius: 5px;
-    background-color: white;
+    border-style: none;
+    
 }
 
 figure.popup{
     visibility: hidden;
-    position: absolute;
-    z-index: 100;
     display: block;
+    z-index: 100;
     left: 0;
     bottom: 0;
-    margin: 0;
-    padding: 0;
+    display: block;
+    padding-top: 5px;
 }
 
-figure.nonpopup:hover figure.popup{
-    visibility: visible;
-    position: absolute;
-    max-width: 50%;
-    height: auto;
-    left: 25%;
-    bottom: 25%;
+figure.popup>p{
+    text-align: center;
+}
+figure.popup~img.img-circle.img-responsive{
+    display: block;
 }
 
-header.container-fluid{
-    margin: 0;
-    padding: 0;
+h1{
+    font-style: italic;
+    color: #262626;
+    font-family: "Times New Roman";
+    font-weight: bold;
 }
 
-nav.navbar.navbar-inverse{
-    margin: 0;
-    padding: 0;
+h2{
+    text-align: center;
 }
 
-body header a{
-    font-size: 18px;
+#storelocation > img{
+    width: 100%;
+    max-width: 500px;
+    margin: 5px;
 }
-body.container-fluid{
-    overflow: auto;
+
+.navbar-brand > img{
+    width: 80px;
+    display: inline-block;
 }
+
+
+
+.thumbnail>img{
+    width: 150px;
+}
+
