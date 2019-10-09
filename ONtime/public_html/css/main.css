@@ -135,5 +135,23 @@ footer {
   
 }
 
-h2{
+.icon{
+  height:60px;
+  width: 60px;
+
+}
+
+
+.img-zoom > .icon{
+  overflow: visible;
+}
+
+.image-wrap{
+  width: 60px;
+  
+  position: relative;
+}
+
+.icon-container{
+  text-align: center;
 }
