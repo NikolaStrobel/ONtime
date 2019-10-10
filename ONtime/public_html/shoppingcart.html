@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart - OnTime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/shoppingcart.css">
+
+</head>
+
+<body class="container">
+    <header>
+        <h1>Your shopping cart at ONtime</h1>
+    </header>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Your Shopping Cart contains:</h2>
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price/piece</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><a href="ProductDetails.html" target="_blank">Watch1</a></td>
+                    <td>1</td>
+                    <td>40SGD</td>
+                    <td>40SGD</td>
+                    <td><button>Remove</button></td>
+                </tr>
+                <tr>
+                    <td><a href="ProductDetails.html" target="_blank">Watch2</a></td>
+                    <td>2</td>
+                    <td>40SGD</td>
+                    <td>80SGD</td>
+                    <td><button>Remove</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Delivery Address</h2>
+            <form>
+                Full name:<br>
+                <input type="text" name="name"><br>
+                Street:<br>
+                <input type="text" name="street"><br>
+                Country Code:<br>
+                <input type="text" name="countrycode"><br>
+                Country:<br>
+                <input type="text" name="country"><br>
+                Phone Number:<br>
+                <input type="tel" name="phonenumber"><br>
+                Email Address:<br>
+                <input type="email" name="email"><br>
+            </form>
+        </div>
+
+        <div class="col-mg-6">
+            <h2>Select Payment Type</h2>
+            <form id="selectpaymenttype">
+                <input type="radio" name="payment-type" value="Cash" data-toggle="collapse"
+                    data-target="#infocash" data-parent="#selectpaymenttype" checked> Cash<br>
+
+                <p class="collapse" id="infocash">Note: Cash must be exact!</p>
+
+
+                <input type="radio" name="payment-type" value="Credit/DebitCard" data-toggle="collapse"
+                    data-target="#bill" data-parent="#selectpaymenttype"> Credit/Debit Card<br>
+
+                <form class="collapse" id="bill">
+                    Name on Card:<br>
+                    <input type="text" name="nameoncard"><br>
+                    Credit Card Number:<br>
+                    <input type="text" name="cardnumber"><br>
+                    Expiry Date:<br>
+                    <input type="text" name="expdate"><br>
+                    cvv:<br>
+                    <input type="text" name="cvv"><br>
+                </form>
+            </form>
+        </div>
+    </div>
+    <div id="checkoutbtn" class="row">
+        <button><a href="checkout.html">Purchase</a></button>
+    </div>
+
+
+</body>
+
+</html>

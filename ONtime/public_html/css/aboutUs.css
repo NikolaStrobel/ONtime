@@ -8,41 +8,45 @@ and open the template in the editor.
     Author     : Nico
 */
 
-section.jumbotron > img{
-    width: 100%;
-}
-
 
 div.thumbnail{
     position: relative;
-    
+    border-style: none;
 }
 
 figure.popup{
     visibility: visible;
-    display: block;
-    z-index: 100;
-    left: 0;
-    bottom: 0;
-    display: block;
-    padding-top: 5px;
+    
 }
+
+.thumbnail:hover figure.popup{
+    visibility: visible;
+}
+
+.thumbnail>img{
+    width: 150px;
+}
+
+.textbox{
+    border-style: solid;
+    color: grey;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 
 figure.popup>p{
     text-align: center;
 }
-figure.popup~img.img-circle.img-responsive{
-    display: block;
-}
 
-div.thumbnail:focus figure.popup{
-    visibility: visible;
-    position: absolute;
-    
-}
 
 h1{
-    border-bottom-style: solid;
+    font-style: italic;
+    color: #262626;
+    font-family: "Times New Roman";
+    font-weight: bold;
 }
 
 h2{
@@ -50,6 +54,28 @@ h2{
 }
 
 #storelocation > img{
-    width: 50%;
-    margin: 5px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
 }
+
+.navbar-brand > img{
+    width: 80px;
+    display: inline-block;
+}
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 200px;
+}
+
+.map-container iframe {
+    height: auto;
+    width: 100%;
+    max-width:500px;
+    position: absolute;
+    border-radius: 5px;
+}
+
