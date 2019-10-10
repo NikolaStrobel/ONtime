@@ -1,0 +1,32 @@
+body {
+    background-size: auto;
+    background-image: url('../images/PocketWatchBG.jpg')
+    /* hdwallsource,https://blog.hdwallsource.com/15-wonderful-hd-pocket-watch-wallpapers/ */
+}
+
+.pull-left {
+    color: white;
+}
+
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    color: rgb(212, 212, 212);
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
