@@ -5,218 +5,256 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>ONtime Main Page</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script> 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" 
-              type="text/css" 
-              href= 
-              "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> 
-        <link rel="stylesheet"
-              type="text/css" 
-              href= 
-              "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
-        <script defer src="js/carousel.js"></script>
+<head>
+    <title>ONtime Main Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script defer src="js/mainPage.js"></script>
 
-        <style>
-            @font-face { font-family: 'collection'; src: url(fonts/CollectionFree.otf); font-style: normal; font-weight: 100; } 
-        </style>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-
-    </head>
-    <body>
-
-        <div class="hidden">
-            <div>
-                <img id="overlay" src="images/watchus.png">
-            </div>>
-        </div>
-        <nav class="topnav">
-
-            <div class="topnav-centered">
-                <a href="#home" class="active"><img src="images\logo.png" alt="related square 2" style="width:100px;height:40px;"/></a>
-            </div>
-
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-
-            <div class="topnav-right">
-                <a href="#search">Search</a>
-                <a href="#about">About</a>
-            </div>
-
-        </nav>
+    <style>
+        @font-face {
+            font-family: 'collection';
+            src: url(fonts/CollectionFree.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+    </style>
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
 
-                    <div id="imageCarousel" class="carousel slide" data-interval="5000"
-                         data-ride="carousel" data-pause="hover" data-wrap="true">
 
-                        <div class="carousel-inner">
 
-                            <p id="carouselheard">Current Collection</p>
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch3.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch1.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch2.png" class="img-responsive">
-                                    </div>
+</head>
+
+<body>
+
+    <header>
+        <h2>ONtime</h2>
+    </header>
+
+    <nav class="navbar navbar-inverse" id="navbar1">
+        <section class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images\logo.png" alt="Ontime logo"
+                    style="width:40px;height:25px;" /></a>
+        </section>
+
+        <section class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#prod">Products</a></li>
+                <li><a href="#phot">Related Photos</a></li>
+                <li><a href="#revi">Reviews</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </section>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div id="imageCarousel" class="carousel slide" data-interval="5000" data-ride="carousel"
+                    data-pause="hover" data-wrap="true">
+
+                    <div class="carousel-inner">
+
+                        <p id="carouselheard">Current Collection</p>
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch3.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch1.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch2.png" class="img-responsive">
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch1.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch2.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch3.png" class="img-responsive">
-                                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch1.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch2.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch3.png" class="img-responsive">
                                 </div>
                             </div>
-
-                            <a href="#imageCarousel" class="carousel-control left" data-slide="prev" style="background:none !important" >
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a href="#imageCarousel" class="carousel-control right" data-slide="next" style="background:none !important" >
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
                         </div>
 
+                        <a href="#imageCarousel" class="carousel-control left" data-slide="prev"
+                            style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#imageCarousel" class="carousel-control right" data-slide="next"
+                            style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
 
-                    <div id="imageCarousel1" class="carousel slide" data-interval="5000"
-                         data-ride="carousel" data-pause="hover" data-wrap="true">
+                <div id="imageCarousel1" class="carousel slide" data-interval="5000" data-ride="carousel"
+                    data-pause="hover" data-wrap="true">
 
-                        <div class="carousel-inner">
-                            <p id="carouselheard">Best Collection</p>
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch3.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch1.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch2.png" class="img-responsive">
-                                    </div>
+                    <div class="carousel-inner">
+                        <p id="carouselheard">Best Collection</p>
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch3.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch1.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch2.png" class="img-responsive">
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch1.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch2.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-4 img-zoom imghover">
-                                        <img src="images/watch3.png" class="img-responsive">
-                                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch1.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch2.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4 img-zoom imghover">
+                                    <img src="images/watch3.png" class="img-responsive">
                                 </div>
                             </div>
-
-                            <a href="#imageCarousel1" class="carousel-control left" data-slide="prev" style="background:none !important" >
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a href="#imageCarousel1" class="carousel-control right" data-slide="next" style="background:none !important" >
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
                         </div>
 
+                        <a href="#imageCarousel1" class="carousel-control left" data-slide="prev"
+                            style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#imageCarousel1" class="carousel-control right" data-slide="next"
+                            style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar1");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 
-        <div class ="jumbotron">
-            <h1>WATCH US</h1>
-            <div class="container-fluid">
-                <div class="col-md-4"></div>
-                <h2 class="col-md-4">Watch us as we bring you amazing wathes with stunning designs. We try our best to bring you watches that you will love wearing all the time so that you can always be ONtime</h2>
-                <div class="col-md-4"></div>
-            </div>
+    <div class="jumbotron">
+        <h1>WATCH US</h1>
+        <div class="container-fluid">
+            <div class="col-md-4"></div>
+            <h2 class="col-md-4">Watch us as we bring you amazing wathes with stunning designs. We try our best to bring
+                you watches that you will love wearing all the time so that you can always be ONtime</h2>
+            <div class="col-md-4"></div>
         </div>
+    </div>
 
 
-        <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small blue pt-4">
 
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
 
-                <!-- Grid row -->
-                <div class="row">
+            <!-- Grid row -->
+            <div class="row">
 
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
 
-                        <!-- Content -->
-                        <h5 class="text-uppercase">Footer Content</h5>
-                        <p>Here you can use rows and columns to organize your footer content.</p>
-
-                    </div>
-
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mb-md-0 mb-2">
-
-                        <!-- Links -->
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="icon-container"><div class="img-zoom imghover"><img class="icon" src="images/ficon.png"></div></a>
-                            </li>
-                            <li>
-                                <a href="#!"><div class="img-zoom imghover"><img class="icon" src="images/ticon.png"></div></a>
-                            </li>
-                            <li>
-                                <a href="#!"><div class="img-zoom imghover"><img class="icon" src="images/iicon.png"></div></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
 
                 </div>
-                <!-- Grid row -->
+
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-2">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="icon-container">
+                                <div class="img-zoom imghover"><img class="icon" src="images/ficon.png"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <div class="img-zoom imghover"><img class="icon" src="images/ticon.png"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <div class="img-zoom imghover"><img class="icon" src="images/iicon.png"></div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
 
             </div>
-            <!-- Footer Links -->
+            <!-- Grid row -->
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">&copy 2019 Copyright: ONtime.com
-            </div>
-            <!-- Copyright -->
+        </div>
+        <!-- Footer Links -->
 
-        </footer>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">&copy 2019 Copyright: ONtime.com
+        </div>
+        <!-- Copyright -->
 
-    </body>
+    </footer>
+
+</body>
+
 </html>
