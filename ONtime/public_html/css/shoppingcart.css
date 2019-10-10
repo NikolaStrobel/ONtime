@@ -1,34 +1,23 @@
-html{
-    padding-bottom: 20px;
+#checkoutbutton{
+    text-align: right;
 }
 
+button a{
+    color: white;
+}
 
+button a:hover{
+    color: white;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#checkoutbtn{
+#pricetotal{
     text-align: right;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#amounttotal{
+    font-weight: bold;
+    font-size: larger;
 }
