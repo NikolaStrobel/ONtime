@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 25 Sep 2019, 3:13:46 AM
     Author     : Aaron Chua
 */
+
 img
 {
     max-width: 100%;
@@ -19,7 +20,7 @@ img
 .slider
 { 
     max-width: 100%;
-    max-height: 20%;
+    max-height: 10%;
 }
 
 .carousel
@@ -38,7 +39,7 @@ img
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 400px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
     font-family: arial;
 }
@@ -119,25 +120,24 @@ img
 
 .card:hover .overlay-right
 {
-    opacity:1;
+    opacity: 1;
     transition: 0.5s;
 }
 
 
 
 
-/*New arrival*/
+/*------New arrival------*/
 
 .title-box
 {
     background:orange;
     color: #fff;
-    width: 180px;
-    padding: 4px 10px;
-    height: 60px;
-    margin-top: 40px;
-    margin-left: -350px;
-    display: flex;
+    width: 200px;
+    padding: 6px 10px;
+    height: auto;
+    margin-top: 50px;
+    display: block;
 }
 
 .title-box h2
@@ -153,8 +153,8 @@ img
     border-right: 50px solid transparent;
     position:absolute;
     display:flex;
-    margin-top: -4px;
-    margin-left: 160px;
+    margin-top: -62px;
+    margin-left: 180px;
 }
 
 
@@ -197,11 +197,7 @@ img
    
 }
 
-.col-md-4
-{
-    padding: 10px;   
-   
-}
+
 
 .profile
 {
@@ -273,7 +269,7 @@ img
     transition: 0.5s; 
 } 
 
-/*-----------Single Product---------------- */
+/*-----------Single Product Details---------------- */
 .singleProduct
 {
     margin-top: 70px;
@@ -343,6 +339,7 @@ img
     margin-bottom: 50px;
 }
 
+
 .carousel-control-next,
 .carousel-control-prev 
 {
@@ -354,16 +351,54 @@ img
 /*-------footer css-------*/
 .footer 
 {   
-    background-color: #2f2f2f;
-    color: #ffffff;
-    margin: 0px;
-    padding: 10px 10px;
-    font-family: Arial;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000;
+   
 }
 
-.foot a
+.footer h1
+{   
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.footer p 
+{   
+    font-size: 15px;
+   
+}
+
+.copyright
 {
-    color: #ffffff;
+    margin-botton: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.fa-heart-o
+{
+    color: red;
+    font-size: 15px;
+}
+
+.footer-img
+{
+    width:150px;
+}
+
+.footer hr
+{
+    margin-top: 10px;
+    background-color: #000;
+}
+
+.footer .row .fa
+{
+    padding-right: 10px;
+       
 }
 
 
