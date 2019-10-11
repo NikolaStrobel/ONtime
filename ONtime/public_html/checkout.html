@@ -9,10 +9,59 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/shoppingcart.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+
 </head>
-<!--summary of your purchase-->
 
 <body class="container">
+
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
+        <div id="topnav-centered">
+            <a class="navbar-brand" href="index.html"><img src="images\logo_clr.png" alt="Ontime logo"></a>
+        </div>
+
+        <section class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </section>
+
+        <section class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#hot">Top selling</a></li>
+                        <li><a href="products.html#newarr">Newest</a></li>
+                        <li><a href="products.html">All</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
+                        <li><a href="customerservice.html#FAQ">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="productsreview.html">Reviews</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </section>
+    </nav>
+
     <header class="page-header">
         <h1>Thank you for your purchase at ONtime.</h1>
     </header>

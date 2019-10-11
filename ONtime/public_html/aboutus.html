@@ -17,48 +17,51 @@ and open the template in the editor.
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/aboutUs.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <!--integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
         crossorigin="anonymous"></script>
-    <!--integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         crossorigin="anonymous"></script>
-    <!--integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"-->
 
 
 </head>
 
 <body class="container-fluid">
-    <nav class="navbar navbar-inverse">
-        <!--adjust navbar and make it fixed to the top-->
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
+        <div id="topnav-centered">
+            <a class="navbar-brand" href="index.html"><img src="images\logo_clr.png" alt="Ontime logo"></a>
+        </div>
         <section class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo_cut.png" alt="ONtime">
-            </a>
         </section>
         <section class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="customerservice.html">Customer Service</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#hot">Top selling</a></li>
+                        <li><a href="products.html#newarr">Newest</a></li>
+                        <li><a href="products.html">All</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
+                        <li><a href="customerservice.html#FAQ">Faq</a></li>
+                    </ul>
+                </li>
                 <li><a href="productsreview.html">Reviews</a></li>
-                <li class="active"><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html">About us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                    </a>
-                </li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </section>
-
     </nav>
 
     <article class="container">
@@ -78,64 +81,67 @@ and open the template in the editor.
         <h1>Our Team</h1>
         <p>Our current team consists of 4 highly motivated watch makers.
             If you'd like to know more about our members, click on the respective picture.</p>
-        <div id="yeesiang" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#yeesiangstext"
+        <article id="yeesiang" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#yeesiangstext"
             data-parent="#ourteam">
             <h2>Yee Siang</h2>
             <img class="img-circle img-responsive" src="images/logo_bg.png" alt="Yee Siang">
             <figure id="yeesiangstext" class="popup collapse">
-                <div class="textbox">
-                    <p>Yee Siang was born in Singapore.</p>
-                </div>
+                <article class="textbox">
+                    <p>Yee Siang was born in Singapore. Yee Siang was born in Singapore. Yee Siang was born in
+                        Singapore.
+                        Yee Siang was born in Singapore. Yee Siang was born in Singapore.
+                    </p>
+                </article>
             </figure>
-        </div>
+        </article>
 
-        <div id="aaron" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#aaronstext"
+        <article id="aaron" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#aaronstext"
             data-parent="#ourteam">
             <h2>Aaron</h2>
             <img class="img-circle img-responsive" src="images/logo_bg.png" alt="Aaron">
             <figure id="aaronstext" class="popup collapse">
-                <div class="textbox">
-                    <p>Aaron was born in Singapore.Aaron was born in Singapore.Aaron was born in Singapore.
-                        Aaron was born in Singapore.
+                <article class="textbox">
+                    <p>Aaron was born in Singapore.Aaron was born in Singapore.
                         Aaron was born in Singapore.Aaron was born in Singapore.
-                        Aaron was born in Singapore.Aaron was born in Singapore.Aaron was born in Singapore.
+                        Aaron was born in Singapore.Aaron was born in Singapore.
+                        Aaron was born in Singapore.Aaron was born in Singapore.
+                        Aaron was born in Singapore.
                     </p>
 
-                </div>
+                </article>
             </figure>
-        </div>
+        </article>
 
-        <div id="daniel" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#danielstext"
+        <article id="daniel" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#danielstext"
             data-parent="#ourteam">
             <h2>Daniel</h2>
             <img class="img-circle img-responsive" src="images/logo_bg.png" alt="Daniel">
             <figure id="danielstext" class="popup collapse">
-                <div class="textbox">
-                    <p>Daniel was born in Singapore.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                </div>
+                <article class="textbox">
+                    <p>Daniel was born in Singapore. Daniel was born in Singapore.
+                        Daniel was born in Singapore. Daniel was born in Singapore.
+                        Daniel was born in Singapore. Daniel was born in Singapore.
+                        Daniel was born in Singapore. Daniel was born in Singapore.
+                    </p>
+                </article>
             </figure>
-        </div>
+        </article>
 
-        <div id="nikola" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#nikostext"
+        <article id="nikola" class="thumbnail col-md-3 col-sm-6" data-toggle="collapse" data-target="#nikostext"
             data-parent="#ourteam">
             <h2>Nikola</h2>
             <img class="img-circle img-responsive" src="images/logo_bg.png" alt="Nikola">
             <figure id="nikostext" class="popup collapse">
-                <div class="textbox">
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                    <p>Nikola was born in Germany.</p>
-                </div>
+                <article class="textbox">
+                    <p>Nikola was born in Germany. Nikola was born in Germany.
+                        Nikola was born in Germany. Nikola was born in Germany.
+                        Nikola was born in Germany. Nikola was born in Germany.
+                        Nikola was born in Germany. Nikola was born in Germany.
+                        Nikola was born in Germany. Nikola was born in Germany.
+                    </p>
+                </article>
             </figure>
-        </div>
+        </article>
     </section>
 
     <article class="container">

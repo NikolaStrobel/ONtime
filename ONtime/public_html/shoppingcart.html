@@ -9,10 +9,53 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/shoppingcart.css">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/shoppingcartcheck.js"></script>
 </head>
 
 <body class="container">
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
+        <div id="topnav-centered">
+            <a class="navbar-brand" href="index.html"><img src="images\logo_clr.png" alt="Ontime logo"></a>
+        </div>
+        <section class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </section>
+        <section class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#hot">Top selling</a></li>
+                        <li><a href="products.html#newarr">Newest</a></li>
+                        <li><a href="products.html">All</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
+                        <li><a href="customerservice.html#FAQ">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="productsreview.html">Reviews</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </section>
+    </nav>
+
     <header class="page-header">
         <h1>Your shopping cart at ONtime</h1>
     </header>
@@ -46,14 +89,14 @@
                     <!--will remove one item from the shopping cart-->
                 </tr>
                 <tfoot>
-                        <tr class="tfooter">
-                            <td></td>
-                            <td></td>
-                            <td id="pricetotal">Price total: </td>
-                            <td id="amounttotal">120 SGD</td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
+                    <tr class="tfooter">
+                        <td></td>
+                        <td></td>
+                        <td id="pricetotal">Price total: </td>
+                        <td id="amounttotal">120 SGD</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
     </section>
@@ -64,29 +107,29 @@
             <section class="form-group row">
                 <div class="col-sm-4">
                     <label for="ex1">Full Name</label>
-                    <input class="form-control" id="ex1" type="text">
+                    <input class="form-control" id="fname" type="text">
                 </div>
                 <div class="col-sm-4">
                     <label for="ex2">Email Address</label>
-                    <input class="form-control" id="ex2" type="text">
+                    <input class="form-control" id="email" type="text">
                 </div>
                 <div class="col-sm-4">
                     <label for="ex3">Phone number</label>
-                    <input class="form-control" id="ex3" type="text">
+                    <input class="form-control" id="phone" type="text">
                 </div>
             </section>
             <section class="form-group row">
                 <div class="col-sm-4">
                     <label for="ex1">Street</label>
-                    <input class="form-control" id="ex4" type="text">
+                    <input class="form-control" id="street" type="text">
                 </div>
                 <div class="col-sm-4">
                     <label for="ex2">Country Code</label>
-                    <input class="form-control" id="ex5" type="text">
+                    <input class="form-control" id="countrycode" type="text">
                 </div>
                 <div class="col-sm-4">
                     <label for="ex3">Country</label>
-                    <input class="form-control" id="ex6" type="text">
+                    <input class="form-control" id="country" type="text">
                 </div>
             </section>
         </form>
@@ -95,24 +138,24 @@
         <form id="selectpaymenttype">
             <input type="radio" name="payment-type" value="Cash" checked> Cash (Note: Cash must have the exact
             change!)<br>
-            <input type="radio" name="payment-type" value="Credit/DebitCard"> Credit/Debit Card<br>
+            <input id="cashradio" type="radio" name="payment-type" value="Credit/DebitCard"> Credit/Debit Card<br>
             <form id="billinginfo">
                 <section class="form-group row">
                     <div class="col-sm-4">
                         <label for="ex1">Name on Card</label>
-                        <input class="form-control" id="ex1" type="text">
+                        <input class="form-control" id="cardname" type="text">
                     </div>
                     <div class="col-sm-4">
                         <label for="ex2">Card Number</label>
-                        <input class="form-control" id="ex2" type="text">
+                        <input class="form-control" id="cardnumber" type="text">
                     </div>
                     <div class="col-sm-2">
                         <label for="ex3">Expiry Data</label>
-                        <input class="form-control" id="ex3" type="text">
+                        <input class="form-control" id="expdate" type="text">
                     </div>
                     <div class="col-sm-2">
                         <label for="ex4">cvv</label>
-                        <input class="form-control" id="ex4" type="text">
+                        <input class="form-control" id="cvv" type="text">
                     </div>
                 </section>
             </form>
@@ -121,7 +164,7 @@
 
     <div id="checkoutbutton" class="row">
         <button type="button" class="btn btn-success btn-lg">
-            <a href="checkout.html">Purchase <span class="glyphicon glyphicon-arrow-right"></span></a>
+            <a id="checkbutton" href="checkout.html">Purchase <span class="glyphicon glyphicon-arrow-right"></span></a>
         </button>
     </div>
 
