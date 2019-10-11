@@ -8,7 +8,11 @@
     padding: 10px 10px;
     font-family: Arial;
     position: relative;
+<<<<<<< HEAD
     bottom: 0;
+=======
+    padding-bottom: 0;
+>>>>>>> 2bd6b4b888d737f8784bfe3f79d40385e38744a9
 }
 
 .foot a
