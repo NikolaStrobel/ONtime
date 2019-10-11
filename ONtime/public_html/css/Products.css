@@ -20,7 +20,7 @@ img
 .slider
 { 
     max-width: 100%;
-    max-height: 10%;
+    max-height: 20%;
 }
 
 .carousel
@@ -39,7 +39,7 @@ img
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 400px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     text-align: center;
     font-family: arial;
 }
@@ -120,24 +120,25 @@ img
 
 .card:hover .overlay-right
 {
-    opacity: 1;
+    opacity:1;
     transition: 0.5s;
 }
 
 
 
 
-/*------New arrival------*/
+/*New arrival*/
 
 .title-box
 {
     background:orange;
     color: #fff;
-    width: 200px;
-    padding: 6px 10px;
-    height: auto;
-    margin-top: 50px;
-    display: block;
+    width: 180px;
+    padding: 4px 10px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: -350px;
+    display: flex;
 }
 
 .title-box h2
@@ -153,12 +154,75 @@ img
     border-right: 50px solid transparent;
     position:absolute;
     display:flex;
-    margin-top: -62px;
-    margin-left: 180px;
+    margin-top: -4px;
+    margin-left: 160px;
 }
 
 
 /*-------review css-------*/
+
+/*Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form */
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: large;
+}
+
+input[type=submit] {
+    background-color: rgb(43, 40, 224);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(37, 35, 170);
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
 .review
 {
     margin: 50px auto;
@@ -197,7 +261,11 @@ img
    
 }
 
-
+.col-md-4
+{
+    padding: 10px;   
+   
+}
 
 .profile
 {
@@ -269,7 +337,7 @@ img
     transition: 0.5s; 
 } 
 
-/*-----------Single Product Details---------------- */
+/*-----------Single Product---------------- */
 .singleProduct
 {
     margin-top: 70px;
@@ -339,7 +407,6 @@ img
     margin-bottom: 50px;
 }
 
-
 .carousel-control-next,
 .carousel-control-prev 
 {
@@ -348,58 +415,6 @@ img
 
 
 
-/*-------footer css-------*/
-.footer 
-{   
-    margin-top: 20px;
-    text-align: center;
-    background-color: #ccc;
-    color: #000;
-   
-}
-
-.footer h1
-{   
-    font-size: 30px;
-    margin: 30px 0;
-}
-
-.footer p 
-{   
-    font-size: 15px;
-   
-}
-
-.copyright
-{
-    margin-botton: -80px;
-    text-align: center;
-    font-size: 15px;
-    padding-bottom: 20px;
-}
-
-.fa-heart-o
-{
-    color: red;
-    font-size: 15px;
-}
-
-.footer-img
-{
-    width:150px;
-}
-
-.footer hr
-{
-    margin-top: 10px;
-    background-color: #000;
-}
-
-.footer .row .fa
-{
-    padding-right: 10px;
-       
-}
 
 
 

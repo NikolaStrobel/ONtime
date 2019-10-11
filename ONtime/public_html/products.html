@@ -7,10 +7,14 @@ and open the template in the editor.
 <html>
     <head>
         <title>ONTime</title>
+        <meta name="description" content="ONtime - Top Seller & Best Quality Services on watches">
+        <meta name="keywords" content="Watches, Watch, Strap, Minute, Second, Buying, Selling, Discount, Offer, Fix, Maintenance, New Arrivals, Hot, 
+                    Timberland, BURING, Olivia Burton, Paul Hewitt">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/Products.css" type="text/css"/>
+        <link rel="stylesheet" href="css/products.css" type="text/css"/>
+        <link rel="stylesheet" href="css/headerFooter.css" type="text/css"/>
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
         </script>
@@ -25,53 +29,57 @@ and open the template in the editor.
     </head>
     
     <body>
-        <!--   Slider Carousel  -->
+        <!-- bootstrap.com URL = https://getbootstrap.com/docs/4.3/components/carousel/ company: bootstrap  
+       image source URL = https://www.cocomi.com/pages/mens  company: cocomi -->
         <section>
             <div class="slider"> 
-                <section id="slider" class="carousel slide carousel-fade" data-ride="carousel">
-                    <section class="carousel-inner">
+                <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
                         <figure class="carousel-item active">
-                                <img src="img/carousel1.jpg" class="d-block w-100" >
+                                <img src="img/carousel1.jpg" alt="ca" class="d-block w-100" >    
                         </figure>
                         <figure class="carousel-item">
                             <img src="img/carousel2.jpg" class="d-block w-100" >
                         </figure>
-                    </section> 
+                    </div> 
                     
                     <ol class="carousel-indicators">
                         <li data-target="#slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="1" class></li>
                     </ol>     
-                </section>
+                </div>
             </div>
         </section>
-        
-        <aside>
-            <h4>Epcot Center</h4>
-            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
-        </aside>
+          <!-- bootstrap.com URL = https://getbootstrap.com/docs/4.3/components/carousel/ company bootstrap -->
+
           
-       
         <main class= "container-fluid">
-              
+            
                     <section class="container">
                         <section class="title-box">
                             <h2> New Arrival</h2>
                         </section>
                     </section>
              
-            <section class="row">
-                
-                <section class="col-md-3">
-                   
-                </section>    
-                 
-                <section class="col-md-2">
+             <aside class="sidemenu">
+                <ul>
+                    <li>
+                      
+                        
+                    </li>
+                </ul>
+            </aside>
+            
+            
+            <section class="row">    
+                <!-- W3School product card URL= https://www.w3schools.com/howto/howto_css_product_card.asp 
+                    Font Awesome icons  URL = https://fontawesome.com/v4.7.0/icons/-->
+                <div class="col-md-3">
                     
                      <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchM1.jpg" alt="Male Watch 1" ></a>
                         <h1>Male Watch 1</h1> 
-                        <p class="price">$19.99</p>
+                        <p class="price">$29.99</p>
                         <p>Some text about the watch..</p>
                         
                         <figure class="overlay-right">
@@ -86,14 +94,14 @@ and open the template in the editor.
                         <figure class="star-rating">
                             <i class="fa fa-star" data-rating="1"></i>
                             <i class="fa fa-star" data-rating="2"></i>
-                            <i class="fa fa-star " data-rating="3"></i>
-                            <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star" data-rating="3"></i>
+                            <i class="fa fa-star-o" data-rating="4"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure>
                     </figure>
-                </section> 
+                </div> 
                 
-                <section class="col-md-2">  
+                <section class="col-md-3">  
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchM2.jpg" alt="Male Watch 2" ></a>
                         <h1>Male Watch 2</h1> 
@@ -113,11 +121,11 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="2"></i>
                             <i class="fa fa-star " data-rating="3"></i>
                             <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure>  
                     </figure>
                 </section> 
-                <section class="col-md-2">
+                <section class="col-md-3">
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchM3.jpg" alt="Male Watch 3" ></a>
                         <h1>Male Watch 3</h1> 
@@ -136,17 +144,17 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="1"></i>
                             <i class="fa fa-star" data-rating="2"></i>
                             <i class="fa fa-star " data-rating="3"></i>
-                            <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star-half-o" data-rating="4"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure>     
                     </figure>
                 </section>
-                <section class="col-md-2">
+                <section class="col-md-3">
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchM4.jpg" alt="Male Watch 4" ></a>
                         
                         <h1>Male Watch 4</h1> 
-                        <p class="price">$19.99</p>
+                        <p class="price">$18.99</p>
                         <p>Some text about the watch..</p>
                         <figure class="overlay-right">
                             <button  class ="btn btn-secondary" title="Quick Shop"> 
@@ -162,31 +170,21 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="2"></i>
                             <i class="fa fa-star " data-rating="3"></i>
                             <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure> 
                     </figure>
                 </section>  
+                <section class="container">
+                <section class="title-box">
+                    <h2> Hot </h2>
+                </section>
             </section>
-            
-               <section class="container">
-                        <section class="title-box">
-                            <h2> Hot </h2>
-                        </section>
-               </section>
-            
-                <section class="row">   
                 
-                    <section class="col-md-3">
-                        
-                   
-                    </section> 
-                    
-                    
-                <section class="col-md-2">  
+                <div class="col-md-3">  
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchF1.jpg" alt="Female Watch 1" ></a>
                         <h1>Female Watch 1</h1> 
-                        <p class="price">$19.99</p>
+                        <p class="price">$16.99</p>
                         <p>Some text about the watch..</p>
                         <figure class="overlay-right">
                             <button  class ="btn btn-secondary" title="Quick Shop"> 
@@ -201,12 +199,12 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="2"></i>
                             <i class="fa fa-star " data-rating="3"></i>
                             <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star-half-o" data-rating="5"></i>
                         </figure> 
                     </figure>   
-                </section>  
+                </div>  
                 
-                <section class="col-md-2">  
+                <div class="col-md-3">  
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchF2.jpg" alt="Female Watch 2" ></a>
                         <h1>Female Watch 2</h1> 
@@ -225,12 +223,12 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="2"></i>
                             <i class="fa fa-star " data-rating="3"></i>
                             <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star-half-o" data-rating="5"></i>
                         </figure>  
                     </figure>   
-                </section>    
+                </div>    
                  
-                <section class="col-md-2">
+                <div class="col-md-3">
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchF3.jpg" alt="Female Watch 3" ></a>
                         <h1>Female Watch 3</h1> 
@@ -252,9 +250,9 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="5"></i>
                         </figure>         
                     </figure>   
-                </section>  
+                </div>  
                 
-                <section class="col-md-2">  
+                <div class="col-md-3">  
                     <figure class="card">
                         <a href="ProductDetails.html"><img src="img/WatchF4.jpg" alt="Female Watch 4" ></a>
                         <h1>Female Watch 4</h1>
@@ -273,34 +271,31 @@ and open the template in the editor.
                             <i class="fa fa-star" data-rating="2"></i>
                             <i class="fa fa-star " data-rating="3"></i>
                             <i class="fa fa-star" data-rating="4"></i>
-                            <i class="fa fa-star" data-rating="5"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure> 
-                    </section>  
-                </section>
+                </div>  
+            </section>
+            
+              <!-- W3School product card URL= https://www.w3schools.com/howto/howto_css_product_card.asp 
+                    Font Awesome icons  URL = https://fontawesome.com/v4.7.0/icons/-->
             <hr/>
         </main>
         
-        <article class = "footer">
+           <!--  Font Awesome icons  URL = https://fontawesome.com/v4.7.0/icons/-->
+         <article class = "footer">
             <section class =container>
                 <section class = "row">
-                    <!--<section class = "col-md-3">
-                        <h1>Useful Links</h1>
-                        <p>Privacy Policy</p>
-                        <p>Terms of Use</p>
-                        <p>Return Policy</p>
-                    </section>-->
-
                     <section class = "col-md-4">
                         <h1>Company</h1>
-                        <p>About Us</p>
-                        <p>Contact Us</p>
+                        <a href=""><p>About Us</p></a>
+                        <a href=""><p>Contact Us</p></a>
+                        
                     </section>
                     
                     <section class = "col-md-4">
                         <h1>Customer Support</h1>
-                        <a href=""><p>FAQ</p></a>
-                        <a href=""><p>Contact Us</p></a>
-                        <a href=""><p>Customer Service</p></a>
+                        <a href="customerservice.html#FAQ"><p>FAQ</p></a>
+                        <a href="customerservice.html"><p>Customer Service</p></a>
                     </section>
                     
                     <section class = "col-md-4">
@@ -310,24 +305,11 @@ and open the template in the editor.
                         <a href="https://www.linkedin.com/"><p><i class="fa fa-linkedin"></i> LinkedIn</p></a>
                         <a href="https://twitter.com/"><p><i class="fa fa-twitter"></i> Twitter</p></a>
                     </section>
-                    
-                   <!-- <section class = "col-md-3">
-                        <h1>Download App</h1>
-                        <figure class="footer-img">
-                            <img src="img/google.jpg">
-                            <img src="img/apple.jpg">
-                        </figure>
-                    </section>-->
+
                 </section>
                 <hr/>
                 <p class="copyright">Copyright &copy; 2019 <i class="fa fa-heart-o"></i> ONTime</p>
             </section>    
         </article>    
-                          
     </body>
 </html>
-
-
-
-
-
