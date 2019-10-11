@@ -9,17 +9,60 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/shoppingcart.css">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script defer src="public_html\js\shoppingcartcheck.js"></script>
 </head>
 
 <body class="container">
-    <header>
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
+        <div id="topnav-centered">
+            <a class="navbar-brand" href="index.html"><img src="images\logo_clr.png" alt="Ontime logo"></a>
+        </div>
+        <section class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </section>
+        <section class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#hot">Top selling</a></li>
+                        <li><a href="products.html#newarr">Newest</a></li>
+                        <li><a href="products.html">All</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
+                        <li><a href="customerservice.html#FAQ">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="productsreview.html">Reviews</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <header class="page-header">
         <h1>Your shopping cart at ONtime</h1>
     </header>
-    <div class="row">
+    <section class="row">
         <div class="col-md-12">
             <h2>Your Shopping Cart contains:</h2>
-            <table class="table table-responsive">
+            <table class="table table-striped table-responsive">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -32,67 +75,97 @@
                 <tr>
                     <td><a href="ProductDetails.html" target="_blank">Watch1</a></td>
                     <td>1</td>
-                    <td>40SGD</td>
-                    <td>40SGD</td>
-                    <td><button>Remove</button></td>
+                    <td>40 SGD</td>
+                    <td>40 SGD</td>
+                    <td><button type="button" class="btn btn-danger btn-sm">Remove</button></td>
+                    <!--will remove one item from the shopping cart-->
                 </tr>
                 <tr>
                     <td><a href="ProductDetails.html" target="_blank">Watch2</a></td>
                     <td>2</td>
-                    <td>40SGD</td>
-                    <td>80SGD</td>
-                    <td><button>Remove</button></td>
+                    <td>40 SGD</td>
+                    <td>80 SGD</td>
+                    <td><button type="button" class="btn btn-danger btn-sm">Remove</button></td>
+                    <!--will remove one item from the shopping cart-->
                 </tr>
+                <tfoot>
+                    <tr class="tfooter">
+                        <td></td>
+                        <td></td>
+                        <td id="pricetotal">Price total: </td>
+                        <td id="amounttotal">120 SGD</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
-    </div>
+    </section>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Delivery Address</h2>
-            <form>
-                Full name:<br>
-                <input type="text" name="name"><br>
-                Street:<br>
-                <input type="text" name="street"><br>
-                Country Code:<br>
-                <input type="text" name="countrycode"><br>
-                Country:<br>
-                <input type="text" name="country"><br>
-                Phone Number:<br>
-                <input type="tel" name="phonenumber"><br>
-                Email Address:<br>
-                <input type="email" name="email"><br>
+    <section class="well well-sm row">
+        <h2>Delivery Address</h2>
+        <form id="deliveryinfo">
+            <section class="form-group row">
+                <div class="col-sm-4">
+                    <label for="ex1">Full Name</label>
+                    <input class="form-control" id="fname" type="text">
+                </div>
+                <div class="col-sm-4">
+                    <label for="ex2">Email Address</label>
+                    <input class="form-control" id="email" type="text">
+                </div>
+                <div class="col-sm-4">
+                    <label for="ex3">Phone number</label>
+                    <input class="form-control" id="phone" type="text">
+                </div>
+            </section>
+            <section class="form-group row">
+                <div class="col-sm-4">
+                    <label for="ex1">Street</label>
+                    <input class="form-control" id="street" type="text">
+                </div>
+                <div class="col-sm-4">
+                    <label for="ex2">Country Code</label>
+                    <input class="form-control" id="countrycode" type="text">
+                </div>
+                <div class="col-sm-4">
+                    <label for="ex3">Country</label>
+                    <input class="form-control" id="country" type="text">
+                </div>
+            </section>
+        </form>
+
+        <h2>Select Payment Type</h2>
+        <form id="selectpaymenttype">
+            <input type="radio" name="payment-type" value="Cash" checked> Cash (Note: Cash must have the exact
+            change!)<br>
+            <input id="cashradio" type="radio" name="payment-type" value="Credit/DebitCard"> Credit/Debit Card<br>
+            <form id="billinginfo">
+                <section class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="ex1">Name on Card</label>
+                        <input class="form-control" id="cardname" type="text">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="ex2">Card Number</label>
+                        <input class="form-control" id="cardnumber" type="text">
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="ex3">Expiry Data</label>
+                        <input class="form-control" id="expdate" type="text">
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="ex4">cvv</label>
+                        <input class="form-control" id="cvv" type="text">
+                    </div>
+                </section>
             </form>
-        </div>
+        </form>
+    </section>
 
-        <div class="col-mg-6">
-            <h2>Select Payment Type</h2>
-            <form id="selectpaymenttype">
-                <input type="radio" name="payment-type" value="Cash" data-toggle="collapse"
-                    data-target="#infocash" data-parent="#selectpaymenttype" checked> Cash<br>
-
-                <p class="collapse" id="infocash">Note: Cash must be exact!</p>
-
-
-                <input type="radio" name="payment-type" value="Credit/DebitCard" data-toggle="collapse"
-                    data-target="#bill" data-parent="#selectpaymenttype"> Credit/Debit Card<br>
-
-                <form class="collapse" id="bill">
-                    Name on Card:<br>
-                    <input type="text" name="nameoncard"><br>
-                    Credit Card Number:<br>
-                    <input type="text" name="cardnumber"><br>
-                    Expiry Date:<br>
-                    <input type="text" name="expdate"><br>
-                    cvv:<br>
-                    <input type="text" name="cvv"><br>
-                </form>
-            </form>
-        </div>
-    </div>
-    <div id="checkoutbtn" class="row">
-        <button><a href="checkout.html">Purchase</a></button>
+    <div id="checkoutbutton" class="row">
+        <button type="button" class="btn btn-success btn-lg">
+            <a id="checkbutton" href="checkout.html">Purchase <span class="glyphicon glyphicon-arrow-right"></span></a>
+        </button>
     </div>
 
 

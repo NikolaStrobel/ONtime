@@ -1,7 +1,6 @@
 body {
+  padding-top:30px ;
     background-color: white;
-    margin-left: 5px;
-    margin-right: 5px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -88,30 +87,23 @@ footer {
 }
 
 
-.content {
-  padding: 16px;
+.navbar-brand{  
+  float: none;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%, -50%);
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar-nav li:hover {
+  background-color: rgb(80, 80, 80);
+  transition: transform .5s, background-color 1.5s ease-in-out;
+  transform: scale(1.05);
 }
-
-.sticky + .content {
-  padding-top: 60px;
+.navbar-right{
+  padding-right: 10px;
 }
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 120%;
 }
