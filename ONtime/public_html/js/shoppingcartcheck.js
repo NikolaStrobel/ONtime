@@ -1,5 +1,10 @@
 
-document.getElementById("checkbutton").addEventListener("click", validateForm);
+var x = document.getElementById("checkbutton");
+x.addEventListener("click", test);
+
+function test(){
+  alert("Test");
+}
 
 function validateForm(e){
     //full name must be filled out
@@ -63,4 +68,3 @@ function validateForm(e){
     
     
   }
-}
