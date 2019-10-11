@@ -32,33 +32,52 @@ body {
     font-weight: bold;
 }
 
-
 .navbar-brand{  
     float: none;
     position: absolute;
     left: 50%;
     top: 5px;
     transform: translate(-50%, -50%);
-  }
+}
   
-  .navbar-nav li:hover {
+.navbar-nav li:hover {
     background-color: rgb(80, 80, 80);
     transition: transform .5s, background-color 1.5s ease-in-out;
     transform: scale(1.05);
-  }
-  .navbar-right{
+}
+.navbar-right{
     padding-right: 10px;
-  }
-  nav{
+}
+
+nav{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
-  }
+
+}
+  
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
-  }
+}
   
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+  
+@media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -72,4 +91,4 @@ body {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-  }
+}

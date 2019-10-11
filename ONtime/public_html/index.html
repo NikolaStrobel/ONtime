@@ -11,9 +11,10 @@ and open the template in the editor.
     <meta charset="utf-8">
     <meta name="description" content="ONtime - Top Seller & Best Quality Services on watches">
     <meta name="keywords"
-        content="Watches, Watch, Strap, Minute, Second, Buying, Selling, Discount, Offer, Fix, Maintenance, New Arrivals, Gshock, Fossil, Tag Heuer">
+        content="Watches, Watch, Strap, Minute, Second, buy,buying New Arrivals, Gshock, Fossil, Tag Heuer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/headerFooter.css" />
     <script src="js/mainPage.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -30,7 +31,6 @@ and open the template in the editor.
             font-weight: 100;
         }
     </style>
-
 
 </head>
 
@@ -80,7 +80,7 @@ and open the template in the editor.
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </section>
     </nav>
@@ -93,9 +93,10 @@ and open the template in the editor.
                 <div id="imageCarousel" class="carousel slide" data-interval="5000" data-ride="carousel"
                     data-pause="hover" data-wrap="true">
 
+                    
+                    <p id="carouselheard">Current Collection</p>
                     <div class="carousel-inner">
 
-                        <p id="carouselheard">Current Collection</p>
                         <div class="item active">
                             <div class="row">
                                 <div class="col-xs-4 img-zoom imghover">
@@ -156,9 +157,8 @@ and open the template in the editor.
 
                 <div id="imageCarousel1" class="carousel slide" data-interval="5000" data-ride="carousel"
                     data-pause="hover" data-wrap="true">
-
+                    <p id="carouselheard">Best Collection</p>
                     <div class="carousel-inner">
-                        <p id="carouselheard">Best Collection</p>
                         <div class="item active">
                             <div class="row">
                                 <div class="col-xs-4 img-zoom imghover">
@@ -223,67 +223,36 @@ and open the template in the editor.
                 you watches that you will love wearing all the time so that you can always be ONtime</h2>
             <div class="col-md-4"></div>
         </div>
-    </section>
+    </div>
 
-    <article class="footer">
-            <section class=container>
-                <section class="row">
-                    <!--<section class = "col-md-3">
-                            <h1>Useful Links</h1>
-                            <p>Privacy Policy</p>
-                            <p>Terms of Use</p>
-                            <p>Return Policy</p>
-                        </section>-->
-    
-                    <section class="col-md-4">
-                        <h1>Company</h1>
-                        <p>About Us</p>
-                        <p>Contact Us</p>
-                    </section>
-    
-                    <section class="col-md-4">
-                        <h1>Customer Support</h1>
-                        <a href="">
-                            <p>FAQ</p>
-                        </a>
-                        <a href="">
-                            <p>Contact Us</p>
-                        </a>
-                        <a href="">
-                            <p>Customer Service</p>
-                        </a>
-                    </section>
-    
-                    <section class="col-md-4">
+    <footer class = "footer">
+        <div class =container>
+            <div class = "row">
+                <div class = "col-md-4">
+                    <h1>Company</h1>
+                    <a href=""><p>About Us</p></a>
+                    <a href=""><p>Contact Us</p></a>
+                </div>
+                                        
+                <div class = "col-md-4">
+                    <h1>Customer Support</h1>
+                    <a href="customerservice.html#FAQ"><p>FAQ</p></a>   
+                    <a href=""><p>Customer Service</p></a>
+                    </div>
+                <div class = "col-md-4">
+                    <div class = "col-md-4">
                         <h1>Follow Us On</h1>
-                        <a href="https://www.facebook.com/">
-                            <p><i class="fa fa-facebook-official"></i> Facebook</p>
-                        </a>
-                        <a href="https://www.youtube.com/">
-                            <p><i class="fa fa-youtube-play"></i> Youtube</p>
-                        </a>
-                        <a href="https://www.linkedin.com/">
-                            <p><i class="fa fa-linkedin"></i> LinkedIn</p>
-                        </a>
-                        <a href="https://twitter.com/">
-                            <p><i class="fa fa-twitter"></i> Twitter</p>
-                        </a>
-                    </section>
-    
-                    <!-- <section class = "col-md-3">
-                            <h1>Download App</h1>
-                            <figure class="footer-img">
-                                <img src="img/google.jpg">
-                                <img src="img/apple.jpg">
-                            </figure>
-                        </section>-->
-                </section>
-                <hr />
-                <p class="copyright">Copyright &copy; 2019 <i class="fa fa-heart-o"></i> ONTime</p>
-            </section>
-        </article>
-
-
+                        <a href="https://www.facebook.com/"><p><i class="fa fa-facebook-official"></i> Facebook</p></a>
+                        <a href="https://www.youtube.com/"><p><i class="fa fa-youtube-play"></i> Youtube</p></a>
+                        <a href="https://www.linkedin.com/"><p><i class="fa fa-linkedin"></i> LinkedIn</p></a>
+                        <a href="https://twitter.com/"><p><i class="fa fa-twitter"></i> Twitter</p></a>
+                    </div>          
+                </div>                                          
+            </div>
+            <hr/>
+            <p class="copyright">Copyright &copy; 2019 <i class="fa fa-heart-o"></i> ONTime</p>
+        </div>    
+    </footer>                     
 </body>
 
 </html>

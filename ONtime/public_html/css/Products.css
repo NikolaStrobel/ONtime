@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 25 Sep 2019, 3:13:46 AM
     Author     : Aaron Chua
 */
+
 img
 {
     max-width: 100%;
@@ -159,6 +160,69 @@ img
 
 
 /*-------review css-------*/
+
+/*Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form */
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: large;
+}
+
+input[type=submit] {
+    background-color: rgb(43, 40, 224);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(37, 35, 170);
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
 .review
 {
     margin: 50px auto;
@@ -228,7 +292,7 @@ img
 
 .profile h2
 {
-    fontsize: 20px;
+    font: 20px;
     margin-top: 15px;
     color: #ff9800;
 }
@@ -351,20 +415,6 @@ img
 
 
 
-/*-------footer css-------*/
-.footer 
-{   
-    background-color: #2f2f2f;
-    color: #ffffff;
-    margin: 0px;
-    padding: 10px 10px;
-    font-family: Arial;
-}
-
-.foot a
-{
-    color: #ffffff;
-}
 
 
 .navbar-brand{  
