@@ -292,7 +292,7 @@ input[type=submit]:hover {
 
 .profile h2
 {
-    fontsize: 20px;
+    font: 20px;
     margin-top: 15px;
     color: #ff9800;
 }
