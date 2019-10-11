@@ -7,14 +7,11 @@ and open the template in the editor.
 <html>
 
 <head>
-    <title>Reviews - OnTime</title>
-    <meta name="description" content="ONtime - Top Seller & Best Quality Services on watches">
-    <meta name="keywords"
-        content="Watches, Watch, Strap, Minute, Second, Buying, Selling, Discount, Offer, Fix, Repair, Maintenance, New Arrivals, Gshock, Fossil, Tag Heuer, Fashion, Hand Accessory, Second Hand, Time, Time Keeper, Pocket Watch, Rolex">
+    <title>Reviews</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/Products.css" type="text/css" />
+    <link rel="stylesheet" href="css/reviews.css" type="text/css" />
     <link rel="stylesheet" href="css/headerFooter.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
@@ -23,200 +20,161 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
-        <div id="topnav-centered">
-            <a class="navbar-brand" href="index.html"><img src="images\logo3.png" alt="Ontime logo"
-                    style="width:150px;height:60px;" /></a>
-        </div>
-
-        <section class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </section>
-
-        <section class="collapse navbar-collapse container-fluid" id="myNavbar">
-
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="products.html#hot">Top selling</a></li>
-                        <li><a href="products.html#newarr">Newest</a></li>
-                        <li><a href="products.html">All</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
-                        <li><a href="customerservice.html#FAQ">Faq</a></li>
-                    </ul>
-                </li>
-                <li><a href="productsreview.html">Reviews</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </section>
-    </nav>
-
     <main class="review">
-        <article class="container">
-            <h1>Reviews</h1>
-            <p class="text-center">We value every comments you provide!</p>
 
-            <div class="container" id="CustomerReviews">
+        <h1>Reviews</h1>
+        <p class="text-center">We value every comments you provide!</p>
+
+        <section>
+            <div class="container" id="productReview">
                 <!--Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form -->
-                <form action="">
-                    <h1>Customer Review</h1>
+                <form name="productReview" action="Reviewpage.html" method="post" onsubmit="return validateform()">
 
                     <div class="row">
                         <div class="col-25">
-                            <label for="question">Question</label>
+                            <label for="question">Review</label>
                         </div>
                         <div class="col-75">
-                            <textarea id="question" name="question" placeholder="Write your question.."
-                                style="height:200px"></textarea>
+                            <textarea id="review" name="review" placeholder="Write your reviews.."></textarea>
                         </div>
                     </div>
+
                     <div class="row">
                         <input type="submit" value="Submit">
                     </div>
                 </form>
                 <!--Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form -->
+            </div>
+        </section>
 
-                <section class="row">
-                    <section class="col-md-4 text-center">
-                        <figure class="profile">
-                            <img src="img/femaleicon.jpg " class="user">
-                            <blockquote>WATCH watch watch watches, etc...........</blockquote>
-                            <figure class="star-rating">
-                                <span class="fa fa-star" data-rating="1"></span>
-                                <span class="fa fa-star" data-rating="2"></span>
-                                <span class="fa fa-star" data-rating="3"></span>
-                                <span class="fa fa-star" data-rating="4"></span>
-                                <span class="fa fa-star-o" data-rating="5"></span>
-                            </figure>
-                            <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+        <!--bootstrap -->
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <figure class="profile">
+                        <img src="img/femaleicon.jpg " alt="femaleicon" class="user">
+                        <blockquote>WATCH watch watch watches, etc...........</blockquote>
+                        <figure class="star-rating">
+                            <i class="fa fa-star" data-rating="1"></i>
+                            <i class="fa fa-star" data-rating="2"></i>
+                            <i class="fa fa-star" data-rating="3"></i>
+                            <i class="fa fa-star" data-rating="4"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure>
-                    </section>
+                        <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                    </figure>
+                </div>
 
-                    <section class="col-md-4 text-center">
-                        <figure class="profile">
-                            <img src="img/femaleicon.jpg " class="user">
-                            <blockquote>WATCH watch watch watches, etc.......WATCH watch watch watches,.....
-                            </blockquote>
-                            <figure class="star-rating">
-                                <span class="fa fa-star" data-rating="1"></span>
-                                <span class="fa fa-star" data-rating="2"></span>
-                                <span class="fa fa-star" data-rating="3"></span>
-                                <span class="fa fa-star" data-rating="4"></span>
-                                <span class="fa fa-star-o" data-rating="5"></span>
-                            </figure>
-                            <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                <div class="col-md-4 text-center">
+                    <figure class="profile">
+                        <img src="img/femaleicon.jpg" class="user">
+                        <blockquote>WATCH watch watch watches, etc..</blockquote>
+                        <figure class="star-rating">
+                            <i class="fa fa-star" data-rating="1"></i>
+                            <i class="fa fa-star" data-rating="2"></i>
+                            <i class="fa fa-star" data-rating="3"></i>
+                            <i class="fa fa-star" data-rating="4"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure>
-                    </section>
+                        <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                    </figure>
+                </div>
 
-                    <section class="col-md-4 text-center">
-                        <figure class="profile">
-                            <img src="img/maleicon.jpg " class="user">
-                            <blockquote>WATCH watch watch watches, etc............</blockquote>
-                            <figure class="star-rating">
-                                <span class="fa fa-star" data-rating="1"></span>
-                                <span class="fa fa-star" data-rating="2"></span>
-                                <span class="fa fa-star" data-rating="3"></span>
-                                <span class="fa fa-star" data-rating="4"></span>
-                                <span class="fa fa-star-half-o" data-rating="5"></span>
-                            </figure>
-                            <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                <div class="col-md-4 text-center">
+                    <figure class="profile">
+                        <img src="img/maleicon.jpg " class="user">
+                        <blockquote>WATCH watch watch watches, etc............</blockquote>
+                        <figure class="star-rating">
+                            <span class="fa fa-star" data-rating="1"></span>
+                            <span class="fa fa-star" data-rating="2"></span>
+                            <span class="fa fa-star" data-rating="3"></span>
+                            <span class="fa fa-star" data-rating="4"></span>
+                            <span class="fa fa-star-half-o" data-rating="5"></span>
                         </figure>
-                    </section>
-                </section>
+                        <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                    </figure>
+                </div>
+            </div>
 
-                <section class="row">
-                    <section class="col-md-4 text-center">
-                        <figure class="profile">
-                            <img src="img/maleicon.jpg " class="user">
-                            <blockquote>WATCH watch watch watches, etc...........</blockquote>
-                            <figure class="star-rating">
-                                <span class="fa fa-star" data-rating="1"></span>
-                                <span class="fa fa-star" data-rating="2"></span>
-                                <span class="fa fa-star" data-rating="3"></span>
-                                <span class="fa fa-star" data-rating="4"></span>
-                                <span class="fa fa-star" data-rating="5"></span>
-                            </figure>
-                            <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <figure class="profile">
+                        <img src="img/maleicon.jpg " class="user">
+                        <blockquote>WATCH watch watch watches, etc...........</blockquote>
+                        <figure class="star-rating">
+                            <i class="fa fa-star" data-rating="1"></i>
+                            <i class="fa fa-star" data-rating="2"></i>
+                            <i class="fa fa-star" data-rating="3"></i>
+                            <i class="fa fa-star" data-rating="4"></i>
+                            <i class="fa fa-star" data-rating="5"></i>
                         </figure>
-                    </section>
+                        <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                    </figure>
+                </div>
+                <div class="col-md-4 text-center">
+                    <figure class="profile">
+                        <img src="img/femaleicon.jpg " class="user">
+                        <blockquote>WATCH watch watch watches, etc.......WATCH watch watch watches.......</blockquote>
+                        <figure class="star-rating">
+                            <i class="fa fa-star" data-rating="1"></i>
+                            <i class="fa fa-star" data-rating="2"></i>
+                            <i class="fa fa-star" data-rating="3"></i>
+                            <i class="fa fa-star-half-o" data-rating="4"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
+                        </figure>
+                        <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                    </figure>
+                </div>
 
-                    <section class="col-md-4 text-center">
-                        <figure class="profile">
-                            <img src="img/femaleicon.jpg " class="user">
-                            <blockquote>WATCH watch watch watches, etc.......WATCH watch watch watches,.....
-                            </blockquote>
-                            <figure class="star-rating">
-                                <span class="fa fa-star" data-rating="1"></span>
-                                <span class="fa fa-star" data-rating="2"></span>
-                                <span class="fa fa-star" data-rating="3"></span>
-                                <span class="fa fa-star" data-rating="4"></span>
-                                <span class="fa fa-star" data-rating="5"></span>
-                            </figure>
-                            <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                <div class="col-md-4 text-center">
+                    <figure class="profile">
+                        <img src="img/maleicon.jpg" class="user">
+                        <blockquote>WATCH watch watch watches, etc............</blockquote>
+                        <figure class="star-rating">
+                            <i class="fa fa-star" data-rating="1"></i>
+                            <i class="fa fa-star" data-rating="2"></i>
+                            <i class="fa fa-star" data-rating="3"></i>
+                            <i class="fa fa-star-half-o" data-rating="4"></i>
+                            <i class="fa fa-star-o" data-rating="5"></i>
                         </figure>
-                    </section>
-
-                    <section class="col-md-4 text-center">
-                        <figure class="profile">
-                            <img src="img/maleicon.jpg " class="user">
-                            <blockquote>WATCH watch watch watches, etc............</blockquote>
-                            <figure class="star-rating">
-                                <span class="fa fa-star" data-rating="1"></span>
-                                <span class="fa fa-star" data-rating="2"></span>
-                                <span class="fa fa-star" data-rating="3"></span>
-                                <span class="fa fa-star-half-o" data-rating="4"></span>
-                                <span class="fa fa-star-o" data-rating="5"></span>
-                            </figure>
-                            <h2>Aaron <span>Co-Founder of OnTime </span></h2>
-                        </figure>
-                    </section>
-                </section>
-        </article>
+                        <h2>Aaron <span>Co-Founder of OnTime </span></h2>
+                    </figure>
+                </div>
+        </section>
     </main>
 
+
+    <nav class="container-fluid footer foot text-center">
+        <a href="ProductPage.html">Home |</a>
+        <a href="">Browse |</a>
+        <a href="">Search </a>
+        <p><i>Copyright &copy; 2014 Share Your Travel</i></p>
+    </nav>
 
     <footer class="footer">
         <section class=container>
             <section class="row">
                 <section class="col-md-4">
                     <h1>Company</h1>
-                    <a href="aboutus.html">
-                        <p>About Us</p>
-                    </a>
+                    <p>About Us</p>
                     <p>Contact Us</p>
                 </section>
 
                 <section class="col-md-4">
                     <h1>Customer Support</h1>
-                    <a href="customerservice.html#FAQ">
+                    <a href="">
                         <p>FAQ</p>
                     </a>
                     <a href="">
                         <p>Contact Us</p>
                     </a>
-                    <a href="customerservice.html">
+                    <a href="">
                         <p>Customer Service</p>
                     </a>
                 </section>

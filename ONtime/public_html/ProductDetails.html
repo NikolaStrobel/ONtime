@@ -14,7 +14,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/Products.css" type="text/css" />
+    <link rel="stylesheet" href="css/productDetails.css" type="text/css" />
     <link rel="stylesheet" href="css/headerFooter.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
@@ -28,134 +28,91 @@ and open the template in the editor.
 </head>
 
 <body>
-
-    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
-        <div id="topnav-centered">
-            <a class="navbar-brand" href="index.html"><img src="images\logo3.png" alt="Ontime logo"
-                    style="width:150px;height:60px;" /></a>
-        </div>
-
-        <section class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </section>
-
-        <section class="collapse navbar-collapse container-fluid" id="myNavbar">
-
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="products.html#hot">Top selling</a></li>
-                        <li><a href="products.html#newarr">Newest</a></li>
-                        <li><a href="products.html">All</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
-                        <li><a href="customerservice.html#FAQ">Faq</a></li>
-                    </ul>
-                </li>
-                <li><a href="productsreview.html">Reviews</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </section>
-    </nav>
-
-    <!----------------------   Slider Carousel   ------------------------------------------>
-    <article class="singleProduct">
+    <!----------------------   Single Product Carousel   ------------------------------------------>
+    <article class = "singleProduct">
         <section class="container">
-            <section class=row>
+            <section class =row>
                 <section class="col-md-5">
-                    <section id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
-                        <section class="carousel-inner">
-                            <figure class="carousel-item active">
-                                <img src="img/WatchM1.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchM2.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchM3.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchM4.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchF1.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchF2.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchF3.jpg" class="d-block w-100">
-                            </figure>
-                            <figure class="carousel-item">
-                                <img src="img/WatchF4.jpg" class="d-block w-100">
-                            </figure>
-                            <a class="carousel-control-prev" href="#product-slider" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#product-slider" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </section>
+
+                    <!--   Slider Carousel  -->
+                    <section>
+                        <div class="container-fluid">
+                            <div id="product-slider" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <figure class="carousel-item active">
+                                        <img src="img/WatchM1.jpg" alt="Buring Watch "  class="d-block w-100" >
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="img/WatchM2.jpg" alt="Buring Watch" class="d-block w-100" >
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="img/WatchM3.jpg" alt="Timberland Watch" class="d-block w-100" >
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="img/WatchM4.jpg" alt="Timberland Watch" class="d-block w-100" >
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="img/WatchF1.jpg" alt=" Oliva Burton Watch" class="d-block w-100" >
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="img/WatchF2.jpg" alt="Paul Hewitt Watch" class="d-block w-100" >
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="img/WatchF3.jpg" alt="Paul Hewitt Watch" class="d-block w-100" >
+                                    </figure>
+
+                                </div>
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#product-slider" data-slide="prev">
+                                    <i class="glyphicon glyphicon-chevron-left"></i>
+                                    <i class="sr-only">Previous</i>
+                                </a>
+                                <a class="right carousel-control" href="#product-slider" data-slide="next">
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                    <i class="sr-only">Next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-md-7">
+                        <p class="new-arrival text-center">NEW</p>
+                        <h2>Men and Women's Watches</h2>
+                        <p>Product Code: A12345Z </p> 
+                        <figure class="star-rating">
+                            <span class="fa fa-star" data-rating="1"></span>
+                            <span class="fa fa-star" data-rating="2"></span>
+                            <span class="fa fa-star" data-rating="3"></span>
+                            <span class="fa fa-star" data-rating="4"></span>
+                            <span class="fa fa-star-half-o" data-rating="5"></span>
+                        </figure> 
+                        <p class="price">SGD $40.00 </p>
+                        <p><b>Availability</b> In Stock </p>
+                        <p><b>Condition</b> New </p>
+                        <p><b>Brand</b> ABC.Co </p>
+                        <label>Quantity: </label>
+                        <input type="text" value="">
+                        <button type ="button" class="btn btn-primary"> Add to Cart</button>
+                    </section>
+                </section>    
+
+                <section class="productDescription">
+                    <section class="container">
+                        <h3>Product Description</h3>
+                        <p>This  is the Product Description LOL. This  is the Product Description LOL.This  is the Product Description LOLThis  is the Product Description LOL
+                            This  is the Product Description LOLThis  is the Product Description LOLThis  is the Product Description LOLThis  is the Product Description LOLThis  is the Product 
+                            Description LOL</p>
+
+                        <p>This  is the Product Description LOL. This  is the Product Description LOL.This  is the Product Description LOLThis  is the Product Description LOL
+                            This  is the Product Description LOLThis  is the Product Description LOLThis  is the Product Description LOLThis  is the Product Description LOLThis  is the Product 
+                            Description LOL</p>
+
+                        <hr/>
                     </section>
                 </section>
-                <section class="col-md-7">
-                    <p class="new-arrival text-center">NEW</p>
-                    <h2>Men and Women's Watches</h2>
-                    <p>Product Code: A12345Z </p>
-                    <figure class="star-rating">
-                        <span class="fa fa-star" data-rating="1"></span>
-                        <span class="fa fa-star" data-rating="2"></span>
-                        <span class="fa fa-star" data-rating="3"></span>
-                        <span class="fa fa-star" data-rating="4"></span>
-                        <span class="fa fa-star-half-o" data-rating="5"></span>
-                    </figure>
-                    <p class="price">SGD $40.00 </p>
-                    <p><b>Availability</b> In Stock </p>
-                    <p><b>Condition</b> New </p>
-                    <p><b>Brand</b> ABC.Co </p>
-                    <label>Quantity: </label>
-                    <input type="text" value="">
-                    <button type="button" class="btn btn-primary"> Add to Cart</button>
-                </section>
             </section>
-
-            <section class="productDescription">
-                <section class="container">
-                    <h3>Product Description</h3>
-                    <p>This is the Product Description LOL. This is the Product Description LOL.This is the Product
-                        Description LOLThis is the Product Description LOL
-                        This is the Product Description LOLThis is the Product Description LOLThis is the Product
-                        Description LOLThis is the Product Description LOLThis is the Product
-                        Description LOL</p>
-
-                    <p>This is the Product Description LOL. This is the Product Description LOL.This is the Product
-                        Description LOLThis is the Product Description LOL
-                        This is the Product Description LOLThis is the Product Description LOLThis is the Product
-                        Description LOLThis is the Product Description LOLThis is the Product
-                        Description LOL</p>
-
-                    <hr />
-                </section>
-            </section>
-        </section>
     </article>
 
     <nav class="container-fluid navbar-fixed-bottom footer foot text-center">
