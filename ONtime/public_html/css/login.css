@@ -32,7 +32,7 @@ body {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
+
 .navbar-brand{  
     float: none;
     position: absolute;
@@ -52,7 +52,7 @@ body {
   nav{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
-=======
+  }
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -72,5 +72,4 @@ body {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
->>>>>>> b6f96e3f345ba85c7056c796c15bf45e55abbacb
   }
