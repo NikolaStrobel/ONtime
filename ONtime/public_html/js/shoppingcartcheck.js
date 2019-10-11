@@ -61,7 +61,7 @@ function validateForm(e) {
 
     //Card number must have 16 digits
     var cardnumber = document.forms["selectpaymenttype"]["cardnumber"].value;
-    if (cardnumber.length != 16 || typeof cardnumber !=='number'){
+    if (cardnumber.length != 16){
       alert("Card Number must have 16 digits");
       e.preventDefault();
       return false;
