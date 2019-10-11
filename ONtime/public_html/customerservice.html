@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Watch us ONtime</title>
     <meta name="description" content="ONtime - Top Seller & Best Quality Services on watches">
-    <meta name="keywords" content="Watches, Watch, Strap, Minute, Second, Buying, Selling, Discount, Offer, Fix, Maintenance, New Arrivals, Gshock, Fossil, Tag Heuer">
+    <meta name="keywords"
+        content="Watches, Watch, Strap, Minute, Second, Buying, Selling, Discount, Offer, Fix, Maintenance, New Arrivals, Gshock, Fossil, Tag Heuer">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/customerservice.css" rel="stylesheet" type="text/css">
@@ -14,39 +16,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <section>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <section class="container-fluid">
-                <section class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html" style="padding-top: 0px;">
-                        <img class="ONtimelogo" src="images/logo_clr.png" alt="ONtime logo">
-                    </a>
-                </section>
-                <section class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li class="active"><a href="customerservice.html">Customer Service</a></li>
-                        <li><a href="productsreview.html">Reviews</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-shopping-cart"></span>
-                            </a>
-                        </li>
-                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </section>
-            </section>
-        </nav>
+            <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse">
+                    <div id="topnav-centered">
+                        <a class="navbar-brand" href="index.html"><img src="images\logo3.png" alt="Ontime logo"
+                                style="width:150px;height:60px;" /></a>
+                    </div>
+            
+                    <section class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </section>
+            
+                    <section class="collapse navbar-collapse container-fluid" id="myNavbar">
+            
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="products.html#hot">Top selling</a></li>
+                                    <li><a href="products.html#newarr">Newest</a></li>
+                                    <li><a href="products.html">All</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer service<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="customerservice.html#Maintenance">Maintainence</a></li>
+                                    <li><a href="customerservice.html#FAQ">Faq</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="productsreview.html">Reviews</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                        </ul>
+            
+            
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="login.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                            <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </section>
+                </nav>
         <main class="aftnav">
             <article>
                 <div class="container">
@@ -80,14 +96,16 @@
             </article>
             <div class="container" id="CustomerInquiries">
                 <!--Responsive Form CSS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form -->
-                <form name="CustomerInquiries" action="customerservice.html" method="post" onsubmit="return validateform()">
+                <form name="CustomerInquiries" action="customerservice.html" method="post"
+                    onsubmit="return validateform()">
                     <h1>Customer Inquiries</h1>
                     <div class="row">
                         <div class="col-25">
                             <label for="fname">Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="CIname" name="CIname" placeholder="Your name.." required pattern="[a-zA-Z_.-]*">
+                            <input type="text" id="CIname" name="CIname" placeholder="Your name.." required
+                                pattern="[a-zA-Z_.-]*">
                         </div>
                     </div>
                     <div class="row">
@@ -95,7 +113,8 @@
                             <label for="CIemail">Email</label>
                         </div>
                         <div class="col-75">
-                            <input type="email" id="CIemail" name="CIemail" placeholder="E.g: abc@def.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <input type="email" id="CIemail" name="CIemail" placeholder="E.g: abc@def.com" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         </div>
                     </div>
                     <div class="row">
@@ -220,4 +239,5 @@
             </div>    
         </footer>   
 </body>
+
 </html>
