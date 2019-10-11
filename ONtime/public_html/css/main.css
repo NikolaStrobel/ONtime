@@ -16,12 +16,6 @@ main{
     padding: 10px 10px;
 }
 
-footer {
-    bottom: 0;
-    width: 100%;
-    background-color: darkslategrey;
-    color: white;
-}
 
 
 @font-face { font-family: 'collection'; src: url(fonts/CollectionFree.otf); font-style: normal; font-weight: 100; } 
