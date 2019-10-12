@@ -8,10 +8,10 @@ and open the template in the editor.
     Author     : Aaron Chua
 */
 
-/*-----------Single Product---------------- */
+/*-----------Single Product-------------- */
 .singleProduct
 {
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .new-arrival
@@ -78,9 +78,5 @@ and open the template in the editor.
     margin-bottom: 50px;
 }
 
-.carousel-control-next,
-.carousel-control-prev 
-{
-    filter: invert(100%);
-}
+
 

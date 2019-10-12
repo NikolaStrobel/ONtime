@@ -43,3 +43,9 @@
     padding-right: 10px;
        
 }
+
+#footer {
+  position: absolute; bottom: 0px; left: 0;
+  width: 100%;
+  height:auto;
+  }
