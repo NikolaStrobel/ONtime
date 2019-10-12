@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Aaron Chua
 */
 
-/*-----------Single Product-------------- */
+/*-----------Single Product---------------- */
 .singleProduct
 {
     margin-top: 150px;
@@ -51,17 +51,16 @@ and open the template in the editor.
     width: 30px;
 }
 
-.singleProduct .btn-primary
-{
+button[type=submit] {
     background: green !important;
     color: #fff;
     font-size: 15px;
     margin-left: 20px;
     border:none;
     box-shadow:none !important;
-  
 }
 
+.
 .productDescription h3
 {
     margin-top: 30px;

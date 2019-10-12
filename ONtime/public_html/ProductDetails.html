@@ -15,6 +15,7 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/productDetails.css" rel="stylesheet" type="text/css">
     <link href="css/headerFooter.css" rel="stylesheet" type="text/css">
+    <script src="js/productDetails.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -74,7 +75,7 @@ and open the template in the editor.
 
     <!-- Bootstrap Carousel  W3school  URL = https://www.w3schools.com/bootstrap/bootstrap_carousel.asp  
         all images source from Cocomi.com URL = https://www.cocomi.com/
-        how to make a single product ecommerce URL https://www.youtube.com/watch?v=4zGBRBHsgEY Author= Easy Tutorial (Youtube Channel)-->
+        how to make a single product ecommerce URL https://www.youtube.com/watch?v=4zGBRBHsgEY Author- Easy Tutorials-->
 
     <article class="singleProduct">
         <section class="container">
@@ -151,30 +152,33 @@ and open the template in the editor.
                     <p><b>Availability</b> In Stock </p>
                     <p><b>Condition</b> New </p>
                     <p><b>Brand</b> ABC.Co </p>
-                    <label>Quantity: </label>
-                    <input type="text" value="">
-                    <button type="button" class="btn btn-primary"> Add to Cart</button>
+                    <label>Quantity </label>
+                    <form name="productdetails" action="productDetails.html" method="post"
+                        onsubmit="return validateform()">
+                        <input id="productdetails" name="productdetails">
+                        <button type="submit" value="Submit"> Add to Cart</button>
                 </div>
             </section>
+        </section>
 
-            <section class="productDescription">
-                <section class="container">
-                    <h3>Product Description</h3>
-                    <p>This is the Product Description . This is the Product Description .This is the Product
-                        Description This is the Product Description
-                        This is the Product Description LOLThis is the Product Description This is the Product
-                        Description This is the Product Description LOLThis is the Product
-                        Description</p>
+        <section class="productDescription">
+            <section class="container">
+                <h3>Product Description</h3>
+                <p>This is the Product Description . This is the Product Description .This is the Product
+                    Description This is the Product Description
+                    This is the Product Description LOLThis is the Product Description This is the Product
+                    Description This is the Product Description LOLThis is the Product
+                    Description</p>
 
-                    <p>This is the Product Description . This is the Product Description .This is the Product
-                        Description This is the Product Description
-                        This is the Product Description This is the Product Description This is the Product
-                        Description This is the Product Description LOLThis is the Product
-                        Description </p>
+                <p>This is the Product Description . This is the Product Description .This is the Product
+                    Description This is the Product Description
+                    This is the Product Description This is the Product Description This is the Product
+                    Description This is the Product Description LOLThis is the Product
+                    Description </p>
 
-                    <hr />
-                </section>
+                <hr />
             </section>
+        </section>
         </section>
     </article>
 
